@@ -17,9 +17,5 @@ namespace Tic_Tac_Toe_Game
             InitializeComponent();
         }
         
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
