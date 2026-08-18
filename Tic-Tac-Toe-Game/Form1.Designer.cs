@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -385,8 +386,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CARD_PLAYER1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Tic Tac Toe";
             ((System.ComponentModel.ISupportInitialize)(this.BOX_GLASS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CARD_PLAYER1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CARD_PLAYER2)).EndInit();
