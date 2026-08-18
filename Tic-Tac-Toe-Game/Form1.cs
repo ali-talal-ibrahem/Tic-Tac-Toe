@@ -35,9 +35,25 @@ namespace Tic_Tac_Toe_Game
         }
         
         enum enWinner {
-            player1, player2, draw , GameInProgress
+            player1, player2, Draw , GameInProgress
         }
 
+
+        public void EndGame()
+        {
+            if (GameStatus.Winner == enWinner.player1)
+            {
+                MessageBox.Show("Player 1 Wins", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (GameStatus.Winner == enWinner.player2)
+            {
+                MessageBox.Show("Player 2 Wins", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (GameStatus.Winner == enWinner.Draw)
+            {
+                MessageBox.Show("Draw", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
 
         public void ChangeImage(Button Btn) 
         {
@@ -84,8 +100,23 @@ namespace Tic_Tac_Toe_Game
                     break;
 
             }
+
+                if (GameStatus.PlayCount == 9)
+                {
+                    GameStatus.GameOver = true;
+                    GameStatus.Winner = enWinner.Draw;
+                    EndGame();
+
+                }
             }
-        
+
+
+            else if (Btn.Tag.ToString() == "X" || Btn.Tag.ToString() == "O")
+            {
+                MessageBox.Show("Error", "This Is Checkes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
         }
 
         private void button_MouseClick(object sender, MouseEventArgs e)
