@@ -335,7 +335,7 @@
             this.lb_Winner_Pl1.AutoSize = true;
             this.lb_Winner_Pl1.BackColor = System.Drawing.Color.Transparent;
             this.lb_Winner_Pl1.Font = new System.Drawing.Font("Alexandria SemiBold", 17F);
-            this.lb_Winner_Pl1.ForeColor = System.Drawing.Color.Red;
+            this.lb_Winner_Pl1.ForeColor = System.Drawing.Color.Lime;
             this.lb_Winner_Pl1.Location = new System.Drawing.Point(104, 178);
             this.lb_Winner_Pl1.Name = "lb_Winner_Pl1";
             this.lb_Winner_Pl1.Size = new System.Drawing.Size(117, 40);
@@ -348,7 +348,7 @@
             this.lb_Winner_Pl2.AutoSize = true;
             this.lb_Winner_Pl2.BackColor = System.Drawing.Color.Transparent;
             this.lb_Winner_Pl2.Font = new System.Drawing.Font("Alexandria SemiBold", 17F);
-            this.lb_Winner_Pl2.ForeColor = System.Drawing.Color.Red;
+            this.lb_Winner_Pl2.ForeColor = System.Drawing.Color.Lime;
             this.lb_Winner_Pl2.Location = new System.Drawing.Point(104, 360);
             this.lb_Winner_Pl2.Name = "lb_Winner_Pl2";
             this.lb_Winner_Pl2.Size = new System.Drawing.Size(117, 40);
