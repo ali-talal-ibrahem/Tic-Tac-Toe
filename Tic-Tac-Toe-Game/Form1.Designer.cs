@@ -44,8 +44,8 @@
             this.PLAYER1_Photo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Player1_lbl = new System.Windows.Forms.Label();
+            this.Player2_lbl = new System.Windows.Forms.Label();
             this.lb_Winner_Pl1 = new System.Windows.Forms.Label();
             this.lb_Winner_Pl2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_GLASS)).BeginInit();
@@ -232,7 +232,7 @@
             // CARD_PLAYER1
             // 
             this.CARD_PLAYER1.BackColor = System.Drawing.Color.Transparent;
-            this.CARD_PLAYER1.BackgroundImage = global::Tic_Tac_Toe_Game.Properties.Resources.CARD_PLYAER;
+            this.CARD_PLAYER1.BackgroundImage = global::Tic_Tac_Toe_Game.Properties.Resources.CARD_PLYAER_TURN;
             this.CARD_PLAYER1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CARD_PLAYER1.Location = new System.Drawing.Point(29, 92);
             this.CARD_PLAYER1.Name = "CARD_PLAYER1";
@@ -305,29 +305,29 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "TIC TAC TOE";
             // 
-            // label2
+            // Player1_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Alexandria SemiBold", 17F);
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(110, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 40);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Player 1";
+            this.Player1_lbl.AutoSize = true;
+            this.Player1_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.Player1_lbl.Font = new System.Drawing.Font("Alexandria SemiBold", 17F);
+            this.Player1_lbl.ForeColor = System.Drawing.Color.Yellow;
+            this.Player1_lbl.Location = new System.Drawing.Point(110, 130);
+            this.Player1_lbl.Name = "Player1_lbl";
+            this.Player1_lbl.Size = new System.Drawing.Size(106, 40);
+            this.Player1_lbl.TabIndex = 16;
+            this.Player1_lbl.Text = "Player 1";
             // 
-            // label3
+            // Player2_lbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Alexandria SemiBold", 17F);
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(110, 316);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 40);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Player 2";
+            this.Player2_lbl.AutoSize = true;
+            this.Player2_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.Player2_lbl.Font = new System.Drawing.Font("Alexandria SemiBold", 17F);
+            this.Player2_lbl.ForeColor = System.Drawing.Color.Gray;
+            this.Player2_lbl.Location = new System.Drawing.Point(110, 316);
+            this.Player2_lbl.Name = "Player2_lbl";
+            this.Player2_lbl.Size = new System.Drawing.Size(111, 40);
+            this.Player2_lbl.TabIndex = 17;
+            this.Player2_lbl.Text = "Player 2";
             // 
             // lb_Winner_Pl1
             // 
@@ -363,8 +363,8 @@
             this.ClientSize = new System.Drawing.Size(784, 496);
             this.Controls.Add(this.lb_Winner_Pl2);
             this.Controls.Add(this.lb_Winner_Pl1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Player2_lbl);
+            this.Controls.Add(this.Player1_lbl);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.PLAYER1_Photo);
             this.Controls.Add(this.btn_Reset);
@@ -412,8 +412,8 @@
         private System.Windows.Forms.PictureBox PLAYER1_Photo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Player1_lbl;
+        private System.Windows.Forms.Label Player2_lbl;
         private System.Windows.Forms.Label lb_Winner_Pl1;
         private System.Windows.Forms.Label lb_Winner_Pl2;
     }

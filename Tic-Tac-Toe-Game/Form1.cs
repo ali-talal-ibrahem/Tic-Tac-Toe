@@ -33,14 +33,53 @@ namespace Tic_Tac_Toe_Game
         Player1,
         Player2
         }
-
+        
         enum enWinner {
             player1, player2, draw , GameInProgress
         }
 
-        private void button_MouseClick(object sender, MouseEventArgs e)
+
+        public void ChangeImage(Button Btn) 
         {
 
+            switch (PlayerTurn)
+            {
+                case enPlayerTurn.Player1 :
+                    Player2_lbl.ForeColor = Color.Yellow;
+                    Player1_lbl.ForeColor = Color.Gray;
+
+                    CARD_PLAYER1.Image = Properties.Resources.CARD_PLYAER;
+                    CARD_PLAYER2.Image = Properties.Resources.CARD_PLYAER_TURN;
+
+                    Btn.BackgroundImage = Properties.Resources.X;
+                    Btn.Tag = "X";
+
+                    PlayerTurn = enPlayerTurn.Player2;
+                    GameStatus.PlayCount++;
+
+                    break;
+
+                case enPlayerTurn.Player2:
+                    Player1_lbl.ForeColor = Color.Yellow;
+                    Player2_lbl.ForeColor = Color.Gray;
+
+                    CARD_PLAYER1.Image = Properties.Resources.CARD_PLYAER_TURN;
+                    CARD_PLAYER2.Image = Properties.Resources.CARD_PLYAER;
+
+                    Btn.BackgroundImage = Properties.Resources.O;
+                    Btn.Tag = "O";
+
+                    PlayerTurn = enPlayerTurn.Player1;
+                    GameStatus.PlayCount++;
+
+                    break;
+            }
+        
+        }
+
+        private void button_MouseClick(object sender, MouseEventArgs e)
+        {
+            ChangeImage((Button)sender);
         }
     }
 }
