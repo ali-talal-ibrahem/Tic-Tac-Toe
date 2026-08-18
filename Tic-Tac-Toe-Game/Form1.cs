@@ -18,8 +18,19 @@ namespace Tic_Tac_Toe_Game
             InitializeComponent();
         }
 
+        Form1(short x) {
+            if (x == 0)
+            {
+                PlayerTurn = enPlayerTurn.Player1;
+            }
+            else {
+                PlayerTurn = enPlayerTurn.Player2;
+            }
+        }
+
+
         stGameStatus GameStatus;
-        enPlayerTurn PlayerTurn = enPlayerTurn.Player1;
+        enPlayerTurn PlayerTurn;
 
 
 
