@@ -13,19 +13,32 @@ namespace Tic_Tac_Toe_Game
 
     public partial class Form1 : Form
     {
+
+        enPlayerTurn StartingPlayer = enPlayerTurn.Player1;
+
         public Form1()
         {
             InitializeComponent();
+            StartingPlayer = enPlayerTurn.Player1;
+            PlayerTurn = StartingPlayer;
         }
 
-        Form1(short x) {
+        public Form1(short x)
+        {
+            InitializeComponent();
+
             if (x == 0)
             {
-                PlayerTurn = enPlayerTurn.Player1;
+                StartingPlayer = enPlayerTurn.Player1;
             }
-            else {
-                PlayerTurn = enPlayerTurn.Player2;
+            else
+            {
+                StartingPlayer = enPlayerTurn.Player2;
             }
+
+            PlayerTurn = StartingPlayer;
+            SetInitialUI();
+
         }
 
 
@@ -49,6 +62,27 @@ namespace Tic_Tac_Toe_Game
             player1, player2, Draw , GameInProgress
         }
 
+
+        public void SetInitialUI() 
+        {
+            if (PlayerTurn == enPlayerTurn.Player1)
+            {
+                Player1_lbl.ForeColor = Color.Yellow;
+                Player2_lbl.ForeColor = Color.Gray;
+                CARD_PLAYER1.BackgroundImage = Properties.Resources.CARD_PLYAER_TURN;
+                CARD_PLAYER2.BackgroundImage = Properties.Resources.CARD_PLYAER;
+            }
+            else
+            {
+                Player1_lbl.ForeColor = Color.Gray;
+                Player2_lbl.ForeColor = Color.Yellow;
+                CARD_PLAYER1.BackgroundImage = Properties.Resources.CARD_PLYAER;
+                CARD_PLAYER2.BackgroundImage = Properties.Resources.CARD_PLYAER_TURN;
+            }
+
+            CARD_PLAYER1.BackgroundImageLayout = ImageLayout.Stretch;
+            CARD_PLAYER2.BackgroundImageLayout = ImageLayout.Stretch;
+        }
 
 
         public bool CheckValues(Button btn1, Button btn2, Button btn3)
@@ -125,6 +159,9 @@ namespace Tic_Tac_Toe_Game
                 CARD_PLAYER1.BackgroundImage = Properties.Resources.CARD_PLYAER_WINNER;
                 CARD_PLAYER2.BackgroundImage = Properties.Resources.CARD_PLYAER;
 
+                Player1_lbl.ForeColor = Color.Yellow;
+                Player2_lbl.ForeColor = Color.Gray;
+
                 lb_Winner_Pl1.Text = "WINNER";
                 lb_Winner_Pl1.ForeColor = Color.Lime;
                 lb_Winner_Pl1.Visible = true;
@@ -140,8 +177,8 @@ namespace Tic_Tac_Toe_Game
                 CARD_PLAYER2.BackgroundImage = Properties.Resources.CARD_PLYAER_WINNER;
                 CARD_PLAYER1.BackgroundImage = Properties.Resources.CARD_PLYAER;
 
-                Player1_lbl.ForeColor = Color.Yellow;
-                Player2_lbl.ForeColor = Color.Gray;
+                Player1_lbl.ForeColor = Color.Gray;
+                Player2_lbl.ForeColor = Color.Yellow;
 
                 lb_Winner_Pl2.Text = "WINNER";
                 lb_Winner_Pl2.ForeColor = Color.Lime;
@@ -266,11 +303,10 @@ namespace Tic_Tac_Toe_Game
             ResetButton(button8);
             ResetButton(button9);
 
-            PlayerTurn = enPlayerTurn.Player1;
-            Player1_lbl.ForeColor = Color.Yellow;
-            Player2_lbl.ForeColor = Color.Gray;
-            CARD_PLAYER1.BackgroundImage = Properties.Resources.CARD_PLYAER_TURN;
-            CARD_PLAYER2.BackgroundImage = Properties.Resources.CARD_PLYAER;
+            PlayerTurn = StartingPlayer;
+            SetInitialUI();
+
+
             lb_Winner_Pl1.Visible = false;
             lb_Winner_Pl2.Visible = false;
 
