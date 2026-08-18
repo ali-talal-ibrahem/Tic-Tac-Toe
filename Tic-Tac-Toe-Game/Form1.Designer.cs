@@ -65,9 +65,9 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(363, 92);
+            this.button1.Location = new System.Drawing.Point(393, 92);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 97);
+            this.button1.Size = new System.Drawing.Size(116, 97);
             this.button1.TabIndex = 0;
             this.button1.Tag = "?";
             this.button1.UseVisualStyleBackColor = false;
@@ -83,9 +83,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(489, 92);
+            this.button2.Location = new System.Drawing.Point(519, 92);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 97);
+            this.button2.Size = new System.Drawing.Size(116, 97);
             this.button2.TabIndex = 1;
             this.button2.Tag = "?";
             this.button2.UseVisualStyleBackColor = false;
@@ -101,9 +101,9 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(615, 92);
+            this.button3.Location = new System.Drawing.Point(645, 92);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 97);
+            this.button3.Size = new System.Drawing.Size(116, 97);
             this.button3.TabIndex = 2;
             this.button3.Tag = "?";
             this.button3.UseVisualStyleBackColor = false;
@@ -119,9 +119,9 @@
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(615, 200);
+            this.button6.Location = new System.Drawing.Point(645, 200);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(115, 97);
+            this.button6.Size = new System.Drawing.Size(116, 97);
             this.button6.TabIndex = 5;
             this.button6.Tag = "?";
             this.button6.UseVisualStyleBackColor = false;
@@ -137,9 +137,9 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(489, 200);
+            this.button5.Location = new System.Drawing.Point(519, 200);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 97);
+            this.button5.Size = new System.Drawing.Size(116, 97);
             this.button5.TabIndex = 4;
             this.button5.Tag = "?";
             this.button5.UseVisualStyleBackColor = false;
@@ -155,9 +155,9 @@
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(363, 200);
+            this.button4.Location = new System.Drawing.Point(393, 200);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 97);
+            this.button4.Size = new System.Drawing.Size(116, 97);
             this.button4.TabIndex = 3;
             this.button4.Tag = "?";
             this.button4.UseVisualStyleBackColor = false;
@@ -173,9 +173,9 @@
             this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(615, 303);
+            this.button9.Location = new System.Drawing.Point(645, 303);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(115, 97);
+            this.button9.Size = new System.Drawing.Size(116, 97);
             this.button9.TabIndex = 8;
             this.button9.Tag = "?";
             this.button9.UseVisualStyleBackColor = false;
@@ -191,9 +191,9 @@
             this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(489, 303);
+            this.button8.Location = new System.Drawing.Point(519, 303);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(115, 97);
+            this.button8.Size = new System.Drawing.Size(116, 97);
             this.button8.TabIndex = 7;
             this.button8.Tag = "?";
             this.button8.UseVisualStyleBackColor = false;
@@ -209,9 +209,9 @@
             this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(363, 303);
+            this.button7.Location = new System.Drawing.Point(393, 303);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(115, 97);
+            this.button7.Size = new System.Drawing.Size(116, 97);
             this.button7.TabIndex = 6;
             this.button7.Tag = "?";
             this.button7.UseVisualStyleBackColor = false;
@@ -223,9 +223,9 @@
             this.BOX_GLASS.BackgroundImage = global::Tic_Tac_Toe_Game.Properties.Resources.RECTANGLE_BOX;
             this.BOX_GLASS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BOX_GLASS.Enabled = false;
-            this.BOX_GLASS.Location = new System.Drawing.Point(344, 74);
+            this.BOX_GLASS.Location = new System.Drawing.Point(374, 74);
             this.BOX_GLASS.Name = "BOX_GLASS";
-            this.BOX_GLASS.Size = new System.Drawing.Size(405, 343);
+            this.BOX_GLASS.Size = new System.Drawing.Size(406, 343);
             this.BOX_GLASS.TabIndex = 9;
             this.BOX_GLASS.TabStop = false;
             // 
@@ -263,9 +263,9 @@
             this.btn_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Reset.Font = new System.Drawing.Font("Alexandria SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Reset.ForeColor = System.Drawing.Color.Yellow;
-            this.btn_Reset.Location = new System.Drawing.Point(361, 433);
+            this.btn_Reset.Location = new System.Drawing.Point(391, 433);
             this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(369, 47);
+            this.btn_Reset.Size = new System.Drawing.Size(370, 47);
             this.btn_Reset.TabIndex = 12;
             this.btn_Reset.Text = "Restart Game";
             this.btn_Reset.UseVisualStyleBackColor = false;
@@ -299,7 +299,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Alexandria SemiBold", 30F);
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(407, 12);
+            this.label1.Location = new System.Drawing.Point(437, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 70);
             this.label1.TabIndex = 15;
@@ -340,6 +340,7 @@
             this.lb_Winner_Pl1.Size = new System.Drawing.Size(117, 40);
             this.lb_Winner_Pl1.TabIndex = 18;
             this.lb_Winner_Pl1.Text = "WINNER";
+            this.lb_Winner_Pl1.Visible = false;
             // 
             // lb_Winner_Pl2
             // 
@@ -352,6 +353,7 @@
             this.lb_Winner_Pl2.Size = new System.Drawing.Size(117, 40);
             this.lb_Winner_Pl2.TabIndex = 19;
             this.lb_Winner_Pl2.Text = "WINNER";
+            this.lb_Winner_Pl2.Visible = false;
             // 
             // Form1
             // 
@@ -360,7 +362,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Tic_Tac_Toe_Game.Properties.Resources.BACKGROUND;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(784, 496);
+            this.ClientSize = new System.Drawing.Size(827, 496);
             this.Controls.Add(this.lb_Winner_Pl2);
             this.Controls.Add(this.lb_Winner_Pl1);
             this.Controls.Add(this.Player2_lbl);

@@ -42,14 +42,20 @@ namespace Tic_Tac_Toe_Game
         public void ChangeImage(Button Btn) 
         {
 
-            switch (PlayerTurn)
-            {
+
+            if (Btn.Tag.ToString() == "?") 
+            { 
+
+            switch (PlayerTurn) {
+
                 case enPlayerTurn.Player1 :
                     Player2_lbl.ForeColor = Color.Yellow;
                     Player1_lbl.ForeColor = Color.Gray;
 
                     CARD_PLAYER1.Image = Properties.Resources.CARD_PLYAER;
                     CARD_PLAYER2.Image = Properties.Resources.CARD_PLYAER_TURN;
+                    CARD_PLAYER2.BackgroundImageLayout = ImageLayout.Stretch;
+                    CARD_PLAYER1.BackgroundImageLayout = ImageLayout.Stretch;
 
                     Btn.BackgroundImage = Properties.Resources.X;
                     Btn.Tag = "X";
@@ -60,11 +66,14 @@ namespace Tic_Tac_Toe_Game
                     break;
 
                 case enPlayerTurn.Player2:
+
                     Player1_lbl.ForeColor = Color.Yellow;
                     Player2_lbl.ForeColor = Color.Gray;
 
                     CARD_PLAYER1.Image = Properties.Resources.CARD_PLYAER_TURN;
                     CARD_PLAYER2.Image = Properties.Resources.CARD_PLYAER;
+                    CARD_PLAYER2.BackgroundImageLayout = ImageLayout.Stretch;
+                    CARD_PLAYER1.BackgroundImageLayout = ImageLayout.Stretch;
 
                     Btn.BackgroundImage = Properties.Resources.O;
                     Btn.Tag = "O";
@@ -73,6 +82,8 @@ namespace Tic_Tac_Toe_Game
                     GameStatus.PlayCount++;
 
                     break;
+
+            }
             }
         
         }
