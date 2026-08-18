@@ -269,6 +269,7 @@
             this.btn_Reset.TabIndex = 12;
             this.btn_Reset.Text = "Restart Game";
             this.btn_Reset.UseVisualStyleBackColor = false;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // PLAYER1_Photo
             // 

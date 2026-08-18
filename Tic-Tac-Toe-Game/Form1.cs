@@ -92,5 +92,44 @@ namespace Tic_Tac_Toe_Game
         {
             ChangeImage((Button)sender);
         }
+
+
+        public void ResetButton(Button Btn)
+        {
+            Btn.BackgroundImage = Properties.Resources.BOX;
+            Btn.Tag = "?";
+            Btn.BackColor = Color.Transparent;
+        }
+
+        public void RestartGame()
+        {
+
+            ResetButton(button1);
+            ResetButton(button2);
+            ResetButton(button3);
+            ResetButton(button4);
+            ResetButton(button5);
+            ResetButton(button6);
+            ResetButton(button7);
+            ResetButton(button8);
+            ResetButton(button9);
+
+            PlayerTurn = enPlayerTurn.Player1;
+            Player1_lbl.ForeColor = Color.Yellow;
+            Player2_lbl.ForeColor = Color.Gray;
+            CARD_PLAYER1.Image = Properties.Resources.CARD_PLYAER_TURN;
+            CARD_PLAYER2.Image = Properties.Resources.CARD_PLYAER;
+            GameStatus.PlayCount = 0;
+            GameStatus.GameOver = false;
+            GameStatus.Winner = enWinner.GameInProgress;
+
+        }
+
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+            RestartGame();
+        }
+
     }
 }
